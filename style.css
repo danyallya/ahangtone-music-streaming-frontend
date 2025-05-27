@@ -1,0 +1,475 @@
+body {
+    background-color: black;
+    text-align: center;
+    font-family: yekan;
+    width: 100%;
+    height: 100%;
+    direction: rtl;
+    padding: 0;
+    margin: 0 auto;
+
+    top: 0;
+}
+
+@font-face {
+    font-family: "yekan";
+    src: url(Yekan.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "entezar";
+    src: url(Entezar.ttf) format('truetype');
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.mrg-center {
+    margin: 0 auto;
+}
+
+.main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.top-main {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    z-index: 1;
+    background-color: #222222;
+    box-shadow: 0 -4px 22px 4px;
+}
+
+.bottom-main {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    background-color: #e6e4e4;
+}
+
+.main-box {
+    position: absolute;
+    width: 70%;
+    height: 86%;
+    top: 7%;
+    right: 15%;
+    z-index: 3;
+    box-shadow: 0 0 44px 1px;
+}
+
+.top-box {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    padding: 1%;
+    box-sizing: border-box;
+    background-color: #292929;
+}
+
+.top-week {
+    overflow: hidden;
+    height: 100%;
+    width: 27%;
+    text-align: right;
+    padding-right: 19px;
+
+}
+
+.top-week .header {
+    color: #d0d5d6;
+    font-size: 15px;
+    font-family: entezar;
+    border-bottom: 1px solid #d0d5d6;
+    padding-right: 5%;
+    box-sizing: border-box;
+
+}
+
+.top-week .items {
+    width: 100%;
+    overflow: auto;
+    height: 90%;
+}
+
+.top-week .items .item {
+    color: #d0d5d6;
+    text-align: right;
+    width: 95%;
+    font-family: entezar;
+    /* display: flex; */
+    margin-top: 3%;
+    margin-right: 5%;
+
+    height: 20%;
+}
+
+.top-week .items .item .num {
+    width: 5%;
+    text-align: center;
+    /* margin-top: 45%; */
+    margin-top: 9px;
+    /* display: table; */
+}
+
+.top-week .items .item .pic {
+    width: 30%;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 100%;
+    /* height: 10%; */
+    margin-right: 5px;
+    border: 1px solid #d0d5d6;
+
+}
+
+.top-week .items .item .info {
+    width: 55%;
+    margin-right: 6%;
+
+}
+
+.player {
+    width: 38%;
+    height: 93%;
+    border: 2px solid #d0d5d6;
+    margin-top: 1%;
+    border-radius: 2%;
+    margin-left: 2%;
+    overflow: hidden;
+}
+
+.player .player-img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.box-player {
+    width: 20%;
+    height: 93%;
+    margin-top: 1%;
+    margin-left: 2%;
+    overflow: hidden;
+}
+
+.box-player .play {
+    border-radius: 50%;
+    background-color: #222222;
+    height: 30%;
+    width: 40%;
+    margin-right: 51%;
+    display: table;
+    cursor: pointer;
+}
+
+.box-player .play:active .icon {
+
+    border-left: 35px solid #d0212b;
+}
+
+.play .icon {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 35px solid #d0d5d6;
+    margin-right: 14px;
+    margin-top: 15px;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+
+.voite {
+    width: 100%;
+    height: 70%;
+    padding-top: 7%;
+}
+
+.voite .star-item {
+    width: 100%;
+    height: 15%;
+
+}
+
+.voite .star-item .btn-star {
+    background-image: url(img.png);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-position: -100px -5px;
+}
+
+.voite .star-item .btn-star:active {
+    background-position: -139px -4px !important;
+
+}
+
+.star-active {
+    background-position: -139px -4px !important;
+}
+
+.voite .star-item .star-five {
+    background-image: url(img.png);
+    width: 90px;
+    height: 20px;
+    background-position: 0 -5px;
+}
+
+.voite .star-item .star-four {
+    background-image: url(img.png);
+    width: 90px;
+    height: 20px;
+    background-position: 0 -32px;
+}
+
+.voite .star-item .star-three {
+    background-image: url(img.png);
+    width: 90px;
+    height: 20px;
+    background-position: 0 -59px;
+}
+
+.voite .star-item .star-tow {
+    background-image: url(img.png);
+    width: 90px;
+    height: 20px;
+    background-position: 0 -84px;
+}
+
+.voite .star-item .star-one {
+    background-image: url(img.png);
+    width: 90px;
+    height: 20px;
+    background-position: 0 -111px;
+}
+
+.voite .btn {
+    width: 54%;
+    height: 17%;
+    border-radius: 15px;
+    background-color: #d0d5d6;
+    color: #d0212b;
+    margin-right: 46%;
+    text-align: center;
+    font-family: entezar;
+    cursor: pointer;
+}
+
+.time-line {
+    width: 80%;
+    margin-right: 10%;
+    height: 2%;
+    bottom: 10%;
+
+}
+
+.time-counter {
+    width: 80%;
+    margin-right: 10%;
+    height: 9%;
+    color: white;
+    bottom: 0%;
+    font-size: 11px;
+
+}
+
+.time-counter-one {
+    left: 0;
+    width: 10%;
+    height: 80%;
+    background-color: #292929;
+    opacity: 0.7;
+    border-radius: 7px;
+}
+
+.time-counter-tow {
+    right: 0;
+    width: 10%;
+    height: 80%;
+    background-color: #292929;
+    opacity: 0.7;
+    border-radius: 7px;
+}
+
+.time-line-red {
+    height: 100%;
+    width: 10%;
+    background-color: #d0212b;
+    float: left;
+    z-index: 3;
+    position: relative;
+}
+
+.time-line-white {
+    height: 5%;
+    width: 100%;
+    background-color: #d0d5d6;
+    bottom: -2px;
+    position: relative;
+    z-index: 2;
+}
+
+.bottom-box {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    background-color: #f1eeee;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.bottom-box .chat-box {
+    width: 96%;
+    height: 100%;
+    margin-right: 2%;
+    overflow: hidden;
+    /* box-sizing: border-box; */
+}
+
+.bottom-box .chat-box .chat-items {
+    width: 100%;
+    height: 85%;
+    border-bottom: 1px solid #9a9898;
+    /* box-sizing: border-box; */
+    overflow: auto;
+}
+
+.bottom-box .chat-box .typing-box {
+    width: 100%;
+    height: 15%;
+
+}
+
+.send-btn {
+    background-image: url(img.png);
+    width: 40px;
+    height: 40px;
+    background-position: -66px -23px;
+    margin-top: 5px;
+    /* box-sizing: border-box; */
+    background-size: 400px 400px;
+    cursor: pointer;
+
+}
+
+.send-btn:active {
+    background-position: -105px -23px;
+}
+
+.text-area {
+    width: 95%;
+    height: 83%;
+    outline: none;
+    outline: 0;
+    border: 0;
+    background-color: #f1eeee;
+    margin-top: 0.5%;
+    font-family: yekan;
+}
+
+.your-message {
+    min-height: 10%;
+    min-width: 9%;
+    display: table;
+    background-color: #d0212b;
+    border-radius: 6px;
+    color: black;
+    font-family: yekan;
+    padding-top: 1%;
+    font-size: 12px;
+    box-shadow: 0px 0px 5px 0px;
+    margin-right: 22px;
+    margin-top: 28px;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+float: right;
+    clear: both;
+}
+
+.others-message {
+    min-height: 10%;
+    min-width: 9%;
+    display: table;
+    background-color: #b8b8b8;
+    border-radius: 6px;
+    color: black;
+    font-family: yekan;
+    padding-top: 1%;
+    font-size: 12px;
+    box-shadow: 0px 0px 5px 0px;
+    margin-left: 22px;
+    margin-top: 28px;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    clear: both;
+    float: left;
+
+}
+.left-message{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #b8b8b8;
+    /* margin-right: 14px; */
+    /* margin-top: 15px; */
+    /* padding-top: 0px; */
+    box-sizing: border-box;
+    left: -6px;
+    z-index: 1;
+}
+.right-message {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #d0212b;
+    /* margin-right: 14px; */
+    /* margin-top: 15px; */
+    /* padding-top: 0px; */
+    box-sizing: border-box;
+    right: -6px;
+    z-index: 1;
+}
+
+.others-message .text {
+    width: 100%;
+    top: -20px;
+    right: 0;
+    font-family: yekan;
+    font-weight: bold;
+    color: gray;
+    /* margin-bottom: 7px; */
+}
+.your-message .text {
+    width: 100%;
+    top: -20px;
+    right: 0;
+    font-family: yekan;
+    font-weight: bold;
+    color: gray;
+    /* margin-bottom: 7px; */
+}
